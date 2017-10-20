@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.olayinkapeter.toodoo.toodooOptions.ToodooNote">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_toodoo_height"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/toDoTextInput"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:paddingLeft="66dp"-->
+        <!--android:paddingRight="16dp"-->
+        <!--android:lines="2"-->
+        <!--android:maxLines="3"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textColorHint="#ffffff"-->
+        <!--android:theme="@style/MyEditTextTheme">-->
+
+        <!--<android.support.design.widget.TextInputEditText-->
+        <!--android:id="@+id/todoText"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="start|bottom"-->
+        <!--android:hint="Task"-->
+        <!--android:textSize="29sp"-->
+        <!--android:inputType="textMultiLine|textAutoCorrect|textCapSentences"-->
+        <!--android:lines="2"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textColorHint="@color/white"-->
+        <!--android:theme="@style/MyEditTextTheme" />-->
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <LinearLayout
+            android:id="@+id/toDoTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="start|bottom"
+                    android:text="@string/task"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/editIcon"
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="end|bottom"
+                    android:src="@drawable/ic_edit"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+                <EditText
+                    android:id="@+id/todoEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|bottom"
+                    android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+                    android:maxLines="2"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20sp"
+                    android:theme="@style/MyEditTextTheme" />
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/doneFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_check"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|right" />
+
+</android.support.design.widget.CoordinatorLayout>
+

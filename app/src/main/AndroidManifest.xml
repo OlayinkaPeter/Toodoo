@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.olayinkapeter.toodoo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".auth.Welcome"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".auth.Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".auth.SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".auth.AccountInfo"
+            android:label="@string/title_activity_account"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".auth.ForgotPassword" />
+        <activity android:name=".toodooOptions.ToodooNote" />
+        <activity android:name=".toodooOptions.ToodooCamera" />
+
+        <receiver android:name=".helper.ReminderNotificationReceiver" />
+        <receiver android:name=".helper.DueDateNotificationReceiver" />
+
+        <service
+            android:name=".helper.ReminderNotificationService"
+            android:enabled="true" />
+        <service
+            android:name=".helper.DueDateNotificationService"
+            android:enabled="true" />
+
+    </application>
+
+</manifest>
