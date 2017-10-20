@@ -1,99 +1,12 @@
 {
   "project_info": {
-    "project_number": "716937720994",
-    "firebase_url": "https://toodoo-f95d3.firebaseio.com",
-    "project_id": "toodoo-f95d3",
-    "storage_bucket": "toodoo-f95d3.appspot.com"
+    "project_number": "[your project number]",
+    "firebase_url": "[your firebase project URL]",
+    "project_id": "[your project id]",
+    "storage_bucket": "[your project storege bucket]"
   },
   "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:716937720994:android:d9bb31bda1d2a858",
-        "android_client_info": {
-          "package_name": "com.gluey.toodoo"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "716937720994-qcej2jhq1abtmkcbeivq790svbu1pova.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.gluey.toodoo",
-            "certificate_hash": "2d7c58b1edb799bc04ca10fbc79f1cfd08a25a7d"
-          }
-        },
-        {
-          "client_id": "716937720994-1h3fsfp9nu3bsmtnh2bbsh1d95u0davb.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAiG9BXyWgdUB7PbFMTlvZ6i6LV02C0YY4"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "716937720994-1h3fsfp9nu3bsmtnh2bbsh1d95u0davb.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:716937720994:android:c2619aff8367c779",
-        "android_client_info": {
-          "package_name": "com.olayinkapeter.toodoo"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "716937720994-09k7jiflrakue6rhj63o4bv5f03mr5sc.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.olayinkapeter.toodoo",
-            "certificate_hash": "2d7c58b1edb799bc04ca10fbc79f1cfd08a25a7d"
-          }
-        },
-        {
-          "client_id": "716937720994-1h3fsfp9nu3bsmtnh2bbsh1d95u0davb.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAiG9BXyWgdUB7PbFMTlvZ6i6LV02C0YY4"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "716937720994-1h3fsfp9nu3bsmtnh2bbsh1d95u0davb.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    }
+    //[Clients details goes here]
   ],
-  "configuration_version": "1"
+  "configuration_version": "[your configuration version]"
 }
