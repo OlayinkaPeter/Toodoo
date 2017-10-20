@@ -6,7 +6,7 @@
     "storage_bucket": "[your project storege bucket]"
   },
   "client": [
-    //[Clients details goes here]
+    //[Client(s) details goes here]
   ],
   "configuration_version": "[your configuration version]"
 }
