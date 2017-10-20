@@ -208,17 +208,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(MainActivity.this, mRecyclerView, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-//                    ToodooListModel ToodooListModel = toodooList.get(position);
-//
-//                        Intent intent = new Intent(MainActivity.this, ToodooNote.class);
-//                        intent.putExtra(IS_EXISTING_KEY, "true");
-//                        intent.putExtra(TODO_ID_KEY, ToodooListModel.getTodoId());
-//                        intent.putExtra(TODO_ITEM_KEY, ToodooListModel.getTodoItem());
-//                        intent.putExtra(TODO_LABEL_KEY, ToodooListModel.getTodoLabel());
-//                        intent.putExtra(TODO_DUEDATE_KEY, ToodooListModel.getTodoDueDate());
-//                        intent.putExtra(TODO_REMINDER_KEY, ToodooListModel.getTodoReminder());
-//
-//                        startActivity(intent);
+
             }
 
             @Override
